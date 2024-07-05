@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+
+
+.brand{
+    color: white;
+    display: flex;
+    height: 5vh;
+    width: 100vw;
+    background-color: black;
+    align-items: center;
+    
+    padding: 10px;
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+.image1{
+    height: 70px;
+    width: 70px;
+    padding: 15px;
+    border-radius: 20px;
+
+}
+
+nav ul li{
+    padding: 20px;
+    font-weight: bolder;
+    
+}
+
+.spot{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    height: 75vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background: url("bg.jpg") no-repeat;
+    background-size: 100%;
+    flex-direction: column;
+    
+}
+
+.spotifybottom{
+    width: 100vw;
+    height: 12vh;
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+    
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#songsrange{
+    width: 75%;
+    /* cursor: pointer; */
+}
+
+.songitems img{
+    width: 30px;
+    margin: 0 23px;
+    border-radius: 20px;
+}
+
+.songitems{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    width: 40%;
+    color: black;
+    margin: 12px 0;
+
+}
+
+.timestamp{
+    
+    margin: 0 23px;
+
+}
+
+
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songbanner{
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.songinfo{
+    position: absolute;
+    left: 0;
+}
+
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in ;
+}
+
+@media screen and (max-width: 1190px)
+{
+    .timestamp{
+            display: none;
+    }
+}
